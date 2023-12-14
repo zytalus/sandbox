@@ -1,0 +1,21 @@
+{
+  "name": "Sandbox Dev Container",
+  "build": {
+    "dockerfile": "DockerFile"
+  },
+  "postStartCommand": "pre-commit install && npm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "bradlc.vscode-tailwindcss"
+      ],
+      "settings": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+      }
+    }
+  }
+}
